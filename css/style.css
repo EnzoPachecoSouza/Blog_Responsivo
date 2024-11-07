@@ -34,6 +34,17 @@ h3{
     padding: 20px;
 }
 
+#footer{
+    background-color: #02A28F;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+#footer p{
+    color: white;
+    text-align: center;
+}
+
 .container {
     display: flex;
     justify-content: space-between;
@@ -112,7 +123,7 @@ h3{
 /* Blog Section */
 .blog-section {
     display: flex;
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
 .posts-header {
@@ -141,7 +152,7 @@ h3{
 
 .posts-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
     gap: 20px;
 }
 
@@ -154,7 +165,7 @@ h3{
 
 .post-card img {
     width: 100%;
-    height: 150px;
+    height: 250px;
     object-fit: cover;
 }
 
@@ -188,16 +199,28 @@ h3{
 .post-date {
     font-size: 12px;
     color: #999;
-    text-align: right;
+    text-align: left;
 }
 
 .categories-list {
+    display: flex;
+    flex-direction: column;
     list-style: none;
     padding: 0;
 }
 
-.categories-list li a {
-    color: #02A28F;
-    text-decoration: none;
+.categories-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.category-name {
+    color: #666;
+    font-size: 14px;
+}
+
+.number-right {
+    color: #666;
     font-size: 14px;
 }
